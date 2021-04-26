@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 contract HelloWorld {
     address public owner;
     
-    receive() external {
+    fallback() external {
         owner = msg.sender;
     }
 }
